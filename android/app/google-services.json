@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "730375018040",
+    "project_id": "asroostore-74b24",
+    "storage_bucket": "asroostore-74b24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730375018040:android:b008c77a0be3dab294f8cd",
+        "android_client_info": {
+          "package_name": "com.example.asro_store"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-ybo6Bbv-Zr_YhCn_fDGAsK5RplPJ_TI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
