@@ -1,4 +1,6 @@
 import 'package:asro_store/core/app/connectiviy_check.dart';
+import 'package:asro_store/core/style/fonts/font_family_helper.dart';
+import 'package:asro_store/core/style/fonts/font_weight_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:asro_store/core/common/screens/no_networkScreen.dart';
 import 'package:asro_store/core/app/env.variables.dart';
@@ -53,7 +55,7 @@ class _AsrooStoreAppState extends State<AsrooStoreApp> {
         ),
         builder: (context, widget) {
           return ScreenUtilInit(
-            designSize: const Size(375, 812),
+            designSize: const Size(375, 844),
             minTextAdapt: true,
             child: Scaffold(
               body: Builder(
@@ -61,7 +63,12 @@ class _AsrooStoreAppState extends State<AsrooStoreApp> {
                   return Container(
                     child: Center(
                       child: Text(
-                        'hello pep'
+                        'hello عمر',
+                        style: TextStyle(
+                          fontSize: 20.sp,
+                          fontFamily: fontFamily.cairoArabic,
+                          fontWeight: fontWeight.fontBold
+                        )
                       ),
                     ),
                   );
