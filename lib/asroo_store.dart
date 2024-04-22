@@ -2,6 +2,7 @@ import 'package:asro_store/core/app/connectiviy_check.dart';
 import 'package:flutter/material.dart';
 import 'package:asro_store/core/common/screens/no_networkScreen.dart';
 import 'package:asro_store/core/app/env.variables.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 class AsrooStoreApp extends StatefulWidget {
@@ -51,11 +52,21 @@ class _AsrooStoreAppState extends State<AsrooStoreApp> {
           useMaterial3: true,
         ),
         builder: (context, widget) {
-          return Scaffold(
-            body: Builder(
-              builder: (context) {
-                return Container();
-              },
+          return ScreenUtilInit(
+            designSize: const Size(375, 812),
+            minTextAdapt: true,
+            child: Scaffold(
+              body: Builder(
+                builder: (context) {
+                  return Container(
+                    child: Center(
+                      child: Text(
+                        'hello pep'
+                      ),
+                    ),
+                  );
+                },
+              ),
             ),
           );
         },
